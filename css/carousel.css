@@ -1,0 +1,281 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+  background-color: #fff;
+  background: none;
+  
+  box-shadow: @site-shadow;
+  height: 100%;
+}
+.header{
+  height: 56px;
+  background: #0e4194;
+  position: relative;
+  z-index: 1;
+}
+.header .container{
+  height: 100%;
+}
+
+.logo_head {
+  height: 50px;
+}
+.brand {
+	position: fixed;
+top: 1%;
+z-index: 100;
+left: 1%;
+background-color: rgba(245, 245, 245, 0.3);
+border-radius: 50%;
+}
+
+.section_1 {
+	background-image: url(/img/section1bg.png);
+}
+.section_2 {
+	background-image: url(/img/section2bg.png);
+	
+    height: 100%;
+/*
+    margin-right: -15px;
+    margin-left: -15px;
+*/
+}
+
+#section_3 {
+	
+	margin-right: 15px;
+    margin-left: 15px;
+}
+/*
+#section_4 {
+	background-image: url(/img/section7bg.png);
+}
+*/
+.connect_form.fixed{
+  position: fixed;
+  top: 175px;
+/*  margin-left: 2%;*/
+}
+.connect_form.active{
+  display: block;
+}
+.connect_form_name{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "HeliosCondC-Bold",sans-serif;
+  line-height: 1.45;
+  margin-bottom: 37px;
+}
+footer {
+  
+  
+  margin-top: 100px;
+  
+  background: #0e4194;
+  
+}
+
+footer .connect_form_name {
+/*
+  width: 27%;
+  box-sizing: border-box;
+
+  font-size: 30px;
+  padding-right: 30px;
+  margin: 0;
+*/
+}
+
+footer form {
+  display: flex;
+/*   flex-flow: row wrap; */
+}
+
+footer form .connect_input,
+footer form .connect_send {
+  width: 33.3333%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer form input {
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+form .connect_input {
+  padding-right: 30px;
+}
+
+footer form .connect_send {
+  font-size: 27px;
+  font-family: 'HeliosCondC-Bold', arial;
+  color: #0e4194;
+}
+
+footer form .connect_input input {
+  background: #e6e4e4;
+  padding: 20px 18px;
+  border: 1px solid #acb9cf;
+}
+
+.success,
+.error {
+    display: none;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+/*   height: 500px; */
+  margin-bottom: 60px;
+}
+
+.banner .carousel-indicators li {
+  border: none;
+  /*background-color: #ffe600;*/
+  background-color: #9e9e9e;
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+}
+.banner .carousel-indicators .active {
+  border: 0;
+  background-color: #0c4da2;
+  /*background-color: #033f88;
+			background-color: #fff;*/
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+/*   height: 500px; */
+
+  background-color: #f8f8f8;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.text{
+	text-align: justify;
+font-size: large;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+.tel span{
+	font-size: 10px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 0px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
